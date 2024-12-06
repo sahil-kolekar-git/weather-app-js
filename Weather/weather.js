@@ -3,7 +3,7 @@ let myBtn = document.querySelector("button");
 let myDiv = document.querySelector("div");
 myBtn.addEventListener("click", async () => {
   myDiv.innerHTML = "";
-  let apiKey = `923321396cd6f4a40c0c92384925f511`;
+  let apiKey = `apikey`;
   let dataFromOutside = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${myInput.value}&appid=${apiKey}`
   );
